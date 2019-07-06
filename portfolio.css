@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding:0;
+    
+}
+
+@keyframes example {
+    
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@keyframes example2{
+    
+    from{bottom: 10px}
+    to{bottom: -10px}
+}
+body{
+   
+    background: url(image/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 2s;
+transition: .3s;
+   
+}
+
+
+
+.contianer-img{
+    
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 130%);
+    color: #ffff;
+    -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: example2;
+  animation-duration: 1s;
+transition: .5s;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        
+        width: 100%;
+        height: 100%;
+        background: black;
+    }
+    
+}
+
+  
+
+.contianer-img h3{
+    
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 10px;
+    
+}
+
+.contianer-img p{
+    
+    font-size: 1.3em;
+}
+
+.contianer-img button{
+    
+    padding: 12px 30px;
+    border-radius: 17px;
+    outline: none;
+    background: #FF9800;
+    border: none;
+    margin-top: 30px;
+    color: #ffff;
+    text-align: center;
+}
+.contianer-img a{
+    
+    text-decoration: none;
+    color: #ffff;
+}
+
+.contianer-img button:hover{
+    
+    opacity: 0.8;
+}
